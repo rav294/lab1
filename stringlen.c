@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int stringlength(char string[]);
+int stringlength(char str[]);
 
 int main()
 {
@@ -11,14 +11,13 @@ int main()
 	return 0;
 }
 
-int stringlength(char string[])
+int stringlength(char str[])
 {
-	char c;
 	int i, length;
 
 	length=0;
 
-	for (i=0; (c=getchar()) != '\0'; i++)
+	for (i=0; str[i] != '\0'; i++)
 		{
 			length++;
 		}
